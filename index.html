@@ -10,6 +10,7 @@
       crossorigin="anonymous"
     />
     <link href="source/style.css" rel="stylesheet" type="text/css" />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <title>🌈 Find your weather</title>
   </head>
   <body>
@@ -69,7 +70,79 @@
           </div>
         </div>
       </div>
+      <div class="bottom-details">
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="current-time">
+              <h3 id="current-date">Today's date</h3>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm">
+            <span class="futureDay">M</span>
+            <br />
+            <span class="futureDate">7</span>
+            <br />
+            <p>🌤</p>
+            <br />
+            <span class="tempHigh">HIGH</span>
+            <br />
+            <span class="tempLow">LOW</span>
+          </div>
+          <div class="col-sm">
+            <span class="futureDay">T</span>
+            <br />
+            <span class="futureDate">8</span>
+            <br />
+            <p>🌥</p>
+            <br />
+            <span class="tempHigh">HIGH</span>
+            <br />
+            <span class="tempLow">LOW</span>
+          </div>
+          <div class="col-sm">
+            <span class="futureDay">W</span>
+            <br />
+            <span class="futureDate">9</span>
+            <br />
+            <p>☀️</p>
+            <br />
+            <span class="tempHigh">HIGH</span>
+            <br />
+            <span class="tempLow">LOW</span>
+          </div>
+          <div class="col-sm">
+            <span class="futureDay">T</span>
+            <br />
+            <span class="futureDate">10</span>
+            <br />
+            <p>🌤</p>
+            <br />
+            <span class="tempHigh">HIGH</span>
+            <br />
+            <span class="tempLow">LOW</span>
+          </div>
+          <div class="col-sm">
+            <span class="futureDay">F</span>
+            <br />
+            <span class="futureDate">11</span>
+            <br />
+            <p>🌦</p>
+            <br />
+            <span class="tempHigh">HIGH</span>
+            <br />
+            <span class="tempLow">LOW</span>
+          </div>
+        </div>
+      </div>
     </div>
+    <dev class="source-link">
+      <a href="https://github.com/villa151/weather-app" target="_blank"
+        >Open-source code</a
+      >
+      by Samantha Cabrera
+    </dev>
     <script src="style/data.js"></script>
   </body>
 </html>
