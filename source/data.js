@@ -12,18 +12,18 @@ function formatDate(now) {
   let days = ["Sun", "Mon", "Tue", "Wed", "Thurs", "Fri", "Sat"];
   let day = days[today];
   let months = [
-    "January",
-    "February",
-    "March",
-    "April",
+    "Jan",
+    "Feb",
+    "Mar",
+    "Apr",
     "May",
-    "June",
-    "July",
-    "August",
-    "September",
-    "October",
-    "November",
-    "December",
+    "Jun",
+    "Jul",
+    "Aug",
+    "Sept",
+    "Oct",
+    "Nov",
+    "Dec",
   ];
   let month = months[now.getMonth()];
   let date = now.getDate();
@@ -44,13 +44,6 @@ function showCurrentTemp(response) {
   document.querySelector("#current-city").innerHTML = response.data.name;
   document.querySelector("#fahrenheit-link").innerHTML = "°C";
   document.querySelector("#celsius-link").innerHTML = "°F";
-  document.querySelector("#high-now").innerHTML = response.data.main.temp_max;
-  document.querySelector("#low-now").innerHTML = response.data.main.temp_min;
-  document.querySelector("#feels-now").innerHTML =
-    response.data.main.feels_like;
-  document.querySelector("#humidity").innerHTML = response.data.main.humidity;
-  document.querySelector("#sunrise").innerHTML = response.data.sys.sunrise;
-  document.querySelector("#sunset").innerHTML = response.data.sys.sunset;
 }
 
 function searchByCity(city) {

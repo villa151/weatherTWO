@@ -9,6 +9,8 @@
       integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
       crossorigin="anonymous"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;300;400;500;700&family=Montserrat:wght@300;400&display=swap"
       rel="stylesheet"
@@ -20,9 +22,6 @@
   <body>
     <div class="container">
       <div class="top-details">
-        <div class="current-time">
-              <h3 id="current-date">Today's date</h3>
-            </div>
         <form class="form-inline" id="search-form">
           <input
             type="search"
@@ -33,13 +32,17 @@
             class="form-control mr-sm-2"
             aria-label="search"
           />
-          <button type="submit" value="search">
+
+          <button
+            type="submit"
+            value="search"
+            class="btn btn-outline-secondary my-2 my-sm-0"
+          >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="16"
               height="16"
               fill="currentColor"
-              class="bi bi-search"
               viewBox="0 0 16 16"
             >
               <path
@@ -62,58 +65,33 @@
             </svg>
           </button>
         </form>
-        <div class="row">
-        <div class="col-sm" id="image-city">
-          <div class="img-container"></div>
+        <div class="space"></div>
+
+        <div class="img-container">
           <div class="city-result">
             <h1 id="current-city">Mexico City</h1>
             <h2 id="current-temp">
-              <span class="temperature" id="temp-number">75</span>
+              <span class="temperature" id="temp-number">75 F</span>
             </h2>
             <h2>
-              <span class="units" id="units">
-                <a href="#" id="fahrenheit-link">°F</a>
+              <span class="units">
+                <a href="#" id="fahrenheit-link">°F</a> |
+                <a href="#" id="celsius-link">°C</a>
               </span>
             </h2>
           </div>
         </div>
-        <div class="col-sm">
-          <div class="row">
-            <div class="col-sm-6" id="details-col">
-              <span class="miniHeadings">HIGH</span>
-              <br />
-              <span class="answers">high number</span>
-              <br />
-              <br />
-              <span class="miniHeadings">FEELS LIKE</span>
-              <br />
-              <span class="answers">feels number</span>
-              <br />
-              <br />
-              <span class="miniHeadings">SUNRISE</span>
-              <br />
-              <span class="answers">sunrise time</span>
-              <br />
-            </div>
-            <div class="col-sm-6" id="details-col">
-              <span class="miniHeadings">LOW</span>
-              <br />
-              <span class="answers">low number</span>
-              <br />
-              <br />
-              <span class="miniHeadings">HUMIDITY</span>
-              <br />
-              <span class="answers">humidity number</span>
-              <br />
-              <br />
-              <span class="miniHeadings">SUNSET</span>
-              <br />
-              <span class="answers">sunset time</span>
-              <br />
+         <div class="bottom-details">
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="current-time">
+              <h3 id="current-date">Thursday 16:00</h3>
             </div>
           </div>
         </div>
+        <div class="row">
       </div>
+
       <div class="bottom-details">
         <div class="row">
           <div class="col-sm">
@@ -180,6 +158,6 @@
       >
       by Samantha Cabrera
     </dev>
-    <script src="style/data.js"></script>
+    <script src="source/data.js"></script>
   </body>
 </html>
